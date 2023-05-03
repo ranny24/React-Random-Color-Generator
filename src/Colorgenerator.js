@@ -3,10 +3,10 @@ import React, { useState } from 'react';
 import Button from './Button';
 
 function ColorGenerator() {
-  const [backgroundColor, setBackgroundColor] = useState("#FFFFFF");
+  const [backgroundColor, setBackgroundColor] = useState('#FFFFFF');
 
   function generateColor() {
-    const randomColor = "#" + Math.floor(Math.random() * 16777215).toString(16);
+    const randomColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
     setBackgroundColor(randomColor);
   }
 
