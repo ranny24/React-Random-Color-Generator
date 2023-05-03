@@ -10,6 +10,7 @@ function ColorGenerator() {
     const randomColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
     setBackgroundColor(randomColor);
   };
+
   // Render the component
   return (
     <div className="container">
@@ -20,6 +21,12 @@ function ColorGenerator() {
         </div>
       </div>
       <Button onClick={generateColor} />
+      {/* Add the issue here */}
+      {backgroundColor !== '#FFFFFF' && (
+        <div className="generated-color">
+          {backgroundColor}
+        </div>
+      )}
     </div>
   );
 }
