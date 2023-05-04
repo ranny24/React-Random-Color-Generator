@@ -17,7 +17,7 @@ function ColorGenerator() {
       <div className="color-box" style={{ backgroundColor: backgroundColor }}>
         <div className="color-text">
         <div className='Generated Color' />
-          Generated Color: ' '
+          Generated Color: {' '}
           <span className="color-hex">{backgroundColor}</span>
         </div>
       </div>
