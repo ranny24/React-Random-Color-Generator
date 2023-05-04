@@ -1,5 +1,4 @@
-.App
-body {
+.App body {
   background-color: #f1abab;
   font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
   display: flex;
@@ -42,7 +41,7 @@ button {
   padding: 10px 20px;
   background-color: #d729b7;
   color: #0eaa86;
-  border: 4mm ridge rgba(211, 220, 50, .6);;
+  border: 4mm ridge rgba(211, 220, 50, 0.6);
   border-radius: 5px;
   font-size: 18px;
   cursor: pointer;
@@ -54,7 +53,7 @@ button:hover {
 }
 
 .color-square {
-animation: 3s linear 1s infinite alternate slidein;
+  animation: 3s linear 1s infinite alternate slidein;
 }
 
 @keyframes slidein {

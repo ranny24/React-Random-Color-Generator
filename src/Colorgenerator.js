@@ -13,8 +13,7 @@ function ColorGenerator() {
     <div className="container">
       <div className="color-box" style={{ backgroundColor: currentColor }}>
         <div className="color-text">
-          Generated Color:{' '}
-          <span className="color-hex">{currentColor}</span>
+          Generated Color: <span className="color-hex">{currentColor}</span>
         </div>
       </div>
 
