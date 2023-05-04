@@ -15,12 +15,19 @@ function ColorGenerator() {
   return (
     <div className="container">
       <div className="color-box" style={{ backgroundColor: backgroundColor }}>
-        <div className="generated-color">
-          Generated Color:
-          <span className="color-hex"> {backgroundColor}</span>
+        <div className="color-text">
+        <div className='Generated Color' />
+          Generated Color: 'background color hex code'
+          <span className="color-hex">{backgroundColor}</span>
         </div>
       </div>
       <Button onClick={generateColor} />
+
+      {backgroundColor !== '#FFFFFF' && (
+        <div className="generated-color">
+          {backgroundColor}
+        </div>
+      )}
     </div>
   );
 }
