@@ -21,7 +21,6 @@ function ColorGenerator() {
     <div className="container">
       <div className="color-box" ref={colorBoxRef}>
         <div className="color-text">
-        
           Generated Color: <span className="color-hex">{backgroundColor}</span>
         </div>
       </div>
