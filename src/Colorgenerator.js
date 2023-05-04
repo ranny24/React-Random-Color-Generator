@@ -25,6 +25,7 @@ function ColorGenerator() {
           Generated Color: <span className="color-hex">{backgroundColor}</span>
         </div>
       </div>
+
       <Button onClick={generateColor} />
     </div>
   );
