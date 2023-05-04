@@ -15,9 +15,11 @@ function ColorGenerator() {
         <div className="generated-color" style={{ backgroundColor: backgroundColor }}>
           Generated Color: {backgroundColor}
         </div>
+
         <button className="Generate" onClick={generateColor}>
-          Generate
+          `Generate`
         </button>
+
       </div>
     </div>
   );
