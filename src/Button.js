@@ -5,4 +5,5 @@ function Button({ onClick }) {
   return <button onClick={onClick}>Generate</button>;
 }
 
+
 export default Button;
