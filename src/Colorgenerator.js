@@ -17,6 +17,7 @@ function ColorGenerator() {
           <span className="color-hex">{currentColor}</span>
         </div>
       </div>
+
       <Button onClick={generateColor}>Generate</Button>
     </div>
   );
