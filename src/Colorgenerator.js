@@ -1,30 +1,23 @@
-import './App.css';
-import React, { useRef, useState } from 'react';
+import React, { useState } from 'react';
 import Button from './Button';
 
 function ColorGenerator() {
-  const [backgroundColor, setBackgroundColor] = useState('#FFFFFF');
-  const colorBoxRef = useRef(null);
+  const [currentColor, setCurrentColor] = useState('#FFFFFF');
 
   const generateColor = () => {
     const randomColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
-    setBackgroundColor(randomColor);
-    colorBoxRef.current.style.backgroundColor = randomColor;
-    const colorText = `Generated Color: ${randomColor}`;
-    const colorTextElements = colorBoxRef.current.querySelectorAll('.color-text');
-    colorTextElements.forEach((el) => {
-      el.textContent = colorText;
-    });
+    setCurrentColor(randomColor);
   };
 
   return (
     <div className="container">
-      <div className="color-box" ref={colorBoxRef}>
+      <div className="color-box" style={{ backgroundColor: currentColor }}>
         <div className="color-text">
-          Generated Color: <span className="color-hex">{backgroundColor}</span>
+          Generated Color:{' '}
+          <span className="color-hex">{currentColor}</span>
         </div>
       </div>
-      <Button onClick={generateColor} />
+      <Button onClick={generateColor}>Generate</Button>
     </div>
   );
 }
